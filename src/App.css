@@ -24,54 +24,9 @@ padding-right: 15px;
 
 }
 
-/* .note-item:nth-child(4n + 1) {
-  background-color: #f3722c;
-  opacity: 0.8;
+.note-item:hover {
+  background: black;
 }
-
-
-.note-item:nth-child(4n + 2) {
-  background-color: #f8961e;
-  opacity: 0.8;
-}
-
-
-.note-item:nth-child(4n + 3) {
-  background-color: #f9844a;
-  opacity: 0.8;
-}
-
-.note-item:nth-child(4n + 4) {
-  background-color: #f9c74f;
-  opacity: 0.8;
-}
-
-.note-item:nth-child(4n + 5) {
-  background-color: #90be6d;
-  opacity: 0.8;
-}
-
-.note-item:nth-child(4n + 6) {
-  background-color: #43aa8b;
-  opacity: 0.8;
-}
-
-.note-item:nth-child(4n + 7) {
-  background-color: #4d908e;
-  opacity: 0.8;
-}
-
-.note-item:nth-child(4n + 8) {
-  background-color: #577590;
-  opacity: 0.8;
-}
-
-.note-item:nth-child(4n + 9) {
-  background-color: #277da1;
-  opacity: 0.8;
-} */
-
-
 
 .note-footer {
   display: flex;

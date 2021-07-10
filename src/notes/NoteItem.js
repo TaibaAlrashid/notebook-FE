@@ -1,16 +1,20 @@
 import { observer } from 'mobx-react';
-
+import { MdDeleteForever } from 'react-icons/md';
 const NoteItem = (props) => {
 
 
     return (
-        <div>
+        <div className="note-item">
             <h1>
                 {props.notename}
             </h1>
             <p>
                 {props.note.notie}
             </p>
+            <div className="note-footer">
+                <small> 10/07/2021 </small>
+                <MdDeleteForever size="1.3em" />
+            </div>
         </div>
     )
 }

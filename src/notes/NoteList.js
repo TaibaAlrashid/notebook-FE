@@ -15,7 +15,9 @@ const NoteList = () => {
     return (
         <div>
             <SearchBar setQuery={setQuery} />
-            {notelist}
+            <div className="notes-list">
+                {notelist}
+            </div>
         </div>
     )
 }

@@ -2,7 +2,10 @@ import './App.css';
 import NoteList from "./notes/NoteList";
 function App() {
   return (
-    <NoteList />
+    <div className="container">
+      <NoteList />
+    </div>
+
   );
 }
 

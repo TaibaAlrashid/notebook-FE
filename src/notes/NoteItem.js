@@ -1,7 +1,12 @@
 import { observer } from 'mobx-react';
 import { MdDeleteForever } from 'react-icons/md';
+import noteStore from './stores/NoteStore';
+
 const NoteItem = (props) => {
 
+    const handleDelete = () => {
+        noteStore.deletenote(props.note.id);
+    };
 
     return (
         <div className="note-item">
@@ -13,7 +18,7 @@ const NoteItem = (props) => {
             </p>
             <div className="note-footer">
                 <small> {props.note.date} </small>
-                <MdDeleteForever size="1.3em" />
+                <MdDeleteForever size="1.3em" onClick={handleDelete} />
             </div>
         </div>
     )

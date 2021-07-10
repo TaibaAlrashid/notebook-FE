@@ -11,6 +11,15 @@ class NoteStore {
         makeAutoObservable(this);
     }
 
+    deletenote = (NoteId) => {
+        const updatedNotes = this.Notes.filter((note) => note.id !== NoteId);
+        this.Notes = updatedNotes;
+    }
+
+    createnote = () => {
+
+    }
+
 
 }
 

@@ -12,8 +12,8 @@ padding-right: 15px;
 
 .note-item {
   color: white;
-  opacity: 1;
-  background-color: #f94144;
+  background-color: #1a1633;
+  opacity: 0.8;
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 1rem;
@@ -24,7 +24,7 @@ padding-right: 15px;
 
 }
 
-.note-item:nth-child(4n + 1) {
+/* .note-item:nth-child(4n + 1) {
   background-color: #f3722c;
   opacity: 0.8;
 }
@@ -69,7 +69,7 @@ padding-right: 15px;
 .note-item:nth-child(4n + 9) {
   background-color: #277da1;
   opacity: 0.8;
-}
+} */
 
 
 
@@ -87,13 +87,15 @@ padding-right: 15px;
 }
 
 .note-item.new {
-  background-color: rgb(250, 189, 115);
+  background-color: #a381d2;
+  opacity: 0.8;
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: rgb(250, 189, 115);
+  background-color: #a381d2;
+  opacity: 0.8;
 }
 
 textarea:focus {

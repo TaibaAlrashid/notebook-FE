@@ -1,10 +1,10 @@
-import { SearchBarStyled } from "./styles";
+import { SearchBarStyled } from "../styles";
 
 const SearchBar = (props) => {
 
 
     return (
-        <SearchBarStyled placeholder="Search the note" onChange={(event) =>
+        <SearchBarStyled placeholder="Search for note" onChange={(event) =>
             props.setQuery(event.target.value)} />
     )
 }

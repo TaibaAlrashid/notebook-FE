@@ -5,14 +5,14 @@ const NoteItem = (props) => {
 
     return (
         <div className="note-item">
-            <h1>
+            <h2>
                 {props.notename}
-            </h1>
+            </h2>
             <p>
-                {props.note.notie}
+                {props.note.text}
             </p>
             <div className="note-footer">
-                <small> 10/07/2021 </small>
+                <small> {props.note.date} </small>
                 <MdDeleteForever size="1.3em" />
             </div>
         </div>

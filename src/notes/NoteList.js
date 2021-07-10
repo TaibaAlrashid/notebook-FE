@@ -3,7 +3,7 @@ import NoteItem from "./NoteItem";
 import SearchBar from "./components/SearchBar";
 import { observer } from "mobx-react";
 import noteStore from "./stores/NoteStore";
-
+import AddNote from "./components/AddNote";
 
 const NoteList = () => {
 
@@ -17,6 +17,7 @@ const NoteList = () => {
             <SearchBar setQuery={setQuery} />
             <div className="notes-list">
                 {notelist}
+                <AddNote />
             </div>
         </div>
     )

@@ -16,8 +16,8 @@ class NoteStore {
         this.Notes = updatedNotes;
     }
 
-    createnote = () => {
-
+    createnote = (newNote) => {
+        this.Notes.push(newNote);
     }
 
 

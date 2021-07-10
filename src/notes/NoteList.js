@@ -9,8 +9,8 @@ const NoteList = () => {
 
     const [query, setQuery] = useState("");
 
-    const notelist = noteStore.Notes.filter((note) => note.name.toLowerCase().includes(query.toLowerCase())).map((note) => (
-        <NoteItem note={note} notename={note.name} key={note.id} />));
+    const notelist = noteStore.Notes.filter((note) => note.title.toLowerCase().includes(query.toLowerCase())).map((note) => (
+        <NoteItem note={note} notename={note.title} key={note.id} />));
 
     return (
         <div>

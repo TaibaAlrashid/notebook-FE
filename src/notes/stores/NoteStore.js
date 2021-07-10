@@ -1,5 +1,6 @@
 import Notes from "../data/Notes";
 import { makeAutoObservable } from 'mobx';
+import slugify from "react-slugify";
 import axios from 'axios';
 
 class NoteStore {
@@ -17,6 +18,10 @@ class NoteStore {
     }
 
     createnote = (newNote) => {
+        const date = new Date();
+        newNote.id = this.Notes[this.Notes.length - 1].id + 1;
+        newNote.slug = slugify(newNote.title);
+        newNote.date = date.toLocaleDateString();
         this.Notes.push(newNote);
     }
 

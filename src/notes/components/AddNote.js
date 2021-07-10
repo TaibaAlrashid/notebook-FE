@@ -8,7 +8,6 @@ const AddNote = () => {
     const [note, setnote] = useState({
         title: "",
         text: "",
-        date: "",
     });
 
     const handleChange = (event) => {
@@ -17,7 +16,9 @@ const AddNote = () => {
 
     const handleSave = (event) => {
         event.preventDefault();
-        noteStore.createnote(note);
+        if (note.text.length > 0 && note.title.length > 0) {
+            noteStore.createnote(note);
+        }
 
     }
 

@@ -18,8 +18,8 @@ const AddNote = () => {
         event.preventDefault();
         if (note.text.length > 0 && note.title.length > 0) {
             noteStore.createnote(note);
+            setnote(null);
         }
-
     }
 
     return (
@@ -27,7 +27,7 @@ const AddNote = () => {
             <textarea rows="1" cols="10" placeholder="Type to add a title..." onChange={handleChange} name="title" />
             <textarea rows="8" cols="10" placeholder="Type to add a note..." onChange={handleChange} name="text" />
             <div className="note-footer">
-                <small> 200 Remaining </small>
+                <small> Date  </small>
                 <GrChapterAdd size="1.3em" onClick={handleSave} />
             </div>
         </div>
